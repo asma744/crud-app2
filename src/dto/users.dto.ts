@@ -1,17 +1,15 @@
-import { IsNotEmpty } from "class-validator";
-import { IsEmail } from "class-validator";
+import { IsEmail, IsNotEmpty } from 'class-validator';
 
-export class UserDto{
+export class UserDto {
   @IsNotEmpty()
-    fullname: string;
+  fullname: string;
 
-   @IsEmail()
-    email: string;
+  @IsEmail()
+  email: string;
 
-    @IsNotEmpty()
-    age: number;
+  @IsNotEmpty()
+  age: number;
 
-    @IsNotEmpty()
-    country: string;
-
+  @IsNotEmpty()
+  country: string;
 }
