@@ -34,7 +34,3 @@ const Row = ({ id, fullname, email, age, country }) => {
 };
 
 export default Row;
-
-
-
-

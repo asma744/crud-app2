@@ -6,7 +6,7 @@ import {
   Table,
   TableContainer,
   Tbody,
-  Td,
+  
   Text,
   Th,
   Thead,
@@ -19,8 +19,10 @@ import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai';
 import Row from './components/Row';
 import DrawerExample from './components/DrawerExample';
 
+
+
 function App() {
-  const { FetchUsers, Search, users, onOpen, isOpen, onClose } =
+  const { FetchUsers, Search, users, onOpen} =
     useContext(GlobalContext);
   const [query, setQuery] = useState('');
   useEffect(() => {

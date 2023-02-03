@@ -10,7 +10,12 @@ import {
   } from '@nestjs/common';
   import { UserDto } from 'src/dto/users.dto';
   import { UsersService } from './users.service';
-  
+
+const express = require("express");
+const app = express();
+const cors = require("cors");
+
+  app.use(cors());
   @Controller('users')
   export class UsersController {
     constructor(private readonly service: UsersService) {}
